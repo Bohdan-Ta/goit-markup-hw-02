@@ -1,0 +1,386 @@
+:root {
+    --primary-text-color: #757575;
+    --text-item: #212121;
+    --background-color: #ffffff;
+    --second-color-link: #2196F3;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    background: var(--background-color);
+    color: var(--primary-text-color);
+}
+
+header {
+    position: absolute;
+    width: 1600px;
+    height: 80px;
+    left: 0px;
+    top: 0px;
+    background: var(--background-color);
+}
+
+.list {
+    list-style: none;
+}
+
+/*логотип*/
+.logo {
+    position: absolute;
+    width: 145px;
+    height: 31px;
+    left: 224px;
+    top: 24px;
+
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    color: #2196F3;
+    text-decoration: none;
+}
+
+.logo-heder {
+    color: #000;
+}
+
+.logo-footer {
+    color: var(--background-color);
+}
+
+/*панель навигации*/
+nav {
+    position: absolute;
+    height: 16px;
+    width: 294px;
+    left: 462px;
+    top: 15px;
+    border-radius: nullpx;
+
+}
+
+.site-nav .link {
+    color: var(--text-item);
+    text-decoration: none;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+}
+
+.site-nav .link.current {
+    color: var(--second-color-link);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--second-color-link);
+}
+
+.contacts .link {
+    color: var(--primary-text-color);
+    text-decoration: none;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+}
+
+.contacts .link:hover,
+.contacts .link:focus {
+    color: var(--second-color-link);
+}
+
+.site-nav li {
+    border: 50px;
+    display: inline-block;
+}
+
+.contacts li {
+    border: 1px;
+    display: inline-block;
+}
+
+.contacts .tel {
+    position: absolute;
+    width: 122px;
+    height: 16px;
+    left: 1263px;
+    top: 32px;
+}
+
+.contacts .mail {
+    position: absolute;
+    width: 135px;
+    height: 16px;
+    left: 1078px;
+    top: 32px;
+}
+
+/*main block*/
+
+/*hero*/
+.hero {
+    position: absolute;
+    width: 1600px;
+    height: 600px;
+    left: 0px;
+    top: 80px;
+    background: #2F303A;
+}
+
+.hero-title {
+    position: absolute;
+    width: 696px;
+    height: 120px;
+    left: 452px;
+    top: 200px;
+
+    font-family: Roboto;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--background-color);
+}
+
+/*button*/
+.button {
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    left: 700px;
+    top: 430px;
+
+    color: var(--background-color);
+    background: var(--second-color-link);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
+.button:hover {
+    background: #188CE8
+}
+
+/*секции заголовки*/
+/*h2*/
+.section .section-title {
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--text-item);
+}
+
+/*h3*/
+.title {
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--text-item);
+}
+
+/*наши особенности*/
+
+.block-feature {
+    position: absolute;
+    width: 1170px;
+    height: 101px;
+    left: 215px;
+    top: 774px;
+}
+
+.box-features {
+    width: 270px;
+    height: 101px;
+    left: 215px;
+    top: 774px;
+}
+
+.block-feature li {
+    list-style-type: none;
+    display: inline-table;
+}
+
+.box-features p {
+    font-family: Roboto;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+}
+
+/*Чем мы занимаемся*/
+.work {
+    position: absolute;
+    width: 1170px;
+    height: 386px;
+    left: 215px;
+    top: 969px;
+}
+
+.img li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+/*our team*/
+.size-team {
+    position: absolute;
+    width: 1600px;
+    height: 648px;
+    left: 0px;
+    top: 1449px;
+    background: #F5F4FA;
+}
+
+.card-team li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.card-team .title {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.card-team p {
+    font-family: Roboto;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+/*footer*/
+.footer {
+    position: absolute;
+    width: 1600px;
+    height: 252px;
+    left: 0px;
+    top: 2097px;
+    background: #2F303A;
+}
+
+.footer .link {
+    color: var(--background-color);
+    text-decoration: none;
+    font-family: Roboto;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+}
+
+.footer .link:hover,
+.footer .link:focus {
+    color: var(--second-color-link);
+}
+
+.footer .link-cont {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    font-family: Roboto;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+}
+
+.footer .link-cont:hover,
+.footer .link-cont:focus {
+    color: var(--second-color-link);
+}
+
+
+/*portfolio*/
+.btn li {
+    display: inline-block;
+}
+
+.cards-product li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.btn {
+    position: absolute;
+    width: 611px;
+    height: 54px;
+    left: 495px;
+    top: 120px;
+    cursor: pointer;
+}
+
+.btn .all {
+    height: 38px;
+    width: 73px;
+    left: 495px;
+    top: 174px;
+    border-radius: 4px;
+    color: var(--background-color);
+    background-color: var(--second-color-link);
+}
+
+.btn button {
+    width: 130px;
+    height: 38px;
+    left: 976px;
+    top: 174px;
+
+    background: #F5F4FA;
+    border-radius: 4px;
+
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0.03em;
+    text-align: center;
+
+
+}
+
+.cards-product {
+    position: absolute;
+    width: 1170px;
+    height: 1360px;
+    left: 215px;
+    top: 174px;
+}
+
+.cards-product h3 {
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 36px;
+    /* identical to box height, or 200% */
+    letter-spacing: 0.06em;
+    color: var(--text-item)
+}
+
+.cards-product p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    /* identical to box height, or 187% */
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color)
+}
