@@ -3,14 +3,65 @@
     --text-item: #212121;
     --background-color: #ffffff;
     --second-color-link: #2196F3;
+    --half-logo: #000000;
+    --background-hero: #2F303A;
+    --btn-hover: #188CE8;
+    --background-our-team: #F5F4FA;
 }
 
+.list {
+    list-style: none;
+}
+
+/*=============COMPONENT===============*/
+/*====title=====*/
+/*h2 studia*/
+.section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    color: var(--text-item);
+}
+
+/*h2 portfolio*/
+.portfolio h2 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2.0;
+    letter-spacing: 0.06em;
+    color: var(--text-item)
+}
+
+/*h3 our-features*/
+.features-list .title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: var(--text-item);
+}
+
+/*h3 our team*/
+.card-team .title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    color: var(--text-item);
+}
+
+/*====END title=====*/
+
+/*=============END COMPONENT===============*/
 body {
     font-family: Roboto, sans-serif;
+    letter-spacing: 0.03em;
     background: var(--background-color);
     color: var(--primary-text-color);
 }
 
+/*========== HEDER===================*/
 header {
     position: absolute;
     width: 1600px;
@@ -20,36 +71,32 @@ header {
     background: var(--background-color);
 }
 
-.list {
-    list-style: none;
-}
-
-/*логотип*/
+/*=====логотип=====*/
 .logo {
     position: absolute;
     width: 145px;
-    height: 31px;
+    height: 1.2;
     left: 224px;
     top: 24px;
 
-    font-family: Raleway;
-    font-weight: bold;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
-    letter-spacing: 0.03em;
-    color: #2196F3;
+    line-height: 1.2;
+    color: var(--second-color-link);
     text-decoration: none;
 }
 
 .logo-heder {
-    color: #000;
+    color: var(--half-logo);
 }
 
 .logo-footer {
     color: var(--background-color);
 }
 
-/*панель навигации*/
+/*=====end логотип=====*/
+/*====панель навигации====*/
 nav {
     position: absolute;
     height: 16px;
@@ -57,16 +104,14 @@ nav {
     left: 462px;
     top: 15px;
     border-radius: nullpx;
-
 }
 
 .site-nav .link {
     color: var(--text-item);
     text-decoration: none;
-    font-family: Roboto;
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.2;
     letter-spacing: 0.02em;
 }
 
@@ -82,10 +127,9 @@ nav {
 .contacts .link {
     color: var(--primary-text-color);
     text-decoration: none;
-    font-family: Roboto;
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.2;
     letter-spacing: 0.02em;
 }
 
@@ -120,42 +164,54 @@ nav {
     top: 32px;
 }
 
-/*main block*/
+/*====END панель навигации====*/
 
-/*hero*/
+/*========== END HEDER===================*/
+
+/*====MAIN BLOCK====*/
+
+/*==hero==*/
 .hero {
     position: absolute;
     width: 1600px;
     height: 600px;
     left: 0px;
     top: 80px;
-    background: #2F303A;
+    background: var(--background-hero);
 }
 
-.hero-title {
+.hero h1 {
     position: absolute;
     width: 696px;
     height: 120px;
     left: 452px;
     top: 200px;
 
-    font-family: Roboto;
     font-weight: 900;
     font-size: 44px;
-    line-height: 60px;
+    line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--background-color);
 }
 
-/*button*/
+/*==button==*/
 .button {
     position: absolute;
     width: 200px;
     height: 50px;
     left: 700px;
     top: 430px;
+
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
 
     color: var(--background-color);
     background: var(--second-color-link);
@@ -164,35 +220,16 @@ nav {
 }
 
 .button:hover {
-    background: #188CE8
+    background: var(--btn-hover);
 }
 
-/*секции заголовки*/
-/*h2*/
-.section .section-title {
-    font-family: Roboto;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 42px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--text-item);
-}
+/*==END button==*/
+/*==END hero==*/
 
-/*h3*/
-.title {
-    font-family: Roboto;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--text-item);
-}
 
-/*наши особенности*/
 
-.block-feature {
+/*======section-feature=====*/
+.section-feature {
     position: absolute;
     width: 1170px;
     height: 101px;
@@ -200,28 +237,23 @@ nav {
     top: 774px;
 }
 
-.box-features {
+.features-list li {
     width: 270px;
     height: 101px;
     left: 215px;
     top: 774px;
-}
-
-.block-feature li {
     list-style-type: none;
     display: inline-table;
 }
 
-.box-features p {
-    font-family: Roboto;
-    font-weight: normal;
+.section-feature p {
     font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
+    line-height: 1.71;
 }
 
-/*Чем мы занимаемся*/
-.work {
+/*======end section-feature=====*/
+/*====section what are we doing====*/
+.section-work {
     position: absolute;
     width: 1170px;
     height: 386px;
@@ -234,57 +266,46 @@ nav {
     display: inline-block;
 }
 
-/*our team*/
-.size-team {
+/*====end section what are we doing====*/
+
+/*=====section our team=====*/
+.section-team {
     position: absolute;
     width: 1600px;
     height: 648px;
     left: 0px;
     top: 1449px;
-    background: #F5F4FA;
+    background: var(--background-our-team);
 }
 
-.card-team li {
+.section-team li {
     list-style-type: none;
     display: inline-block;
 }
 
-.card-team .title {
-    font-family: Roboto;
-    font-weight: 500;
+.section-team p {
     font-size: 16px;
-    line-height: 19px;
+    line-height: 1.19;
     text-align: center;
-    letter-spacing: 0.03em;
 }
 
-.card-team p {
-    font-family: Roboto;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    letter-spacing: 0.03em;
-}
+/*=====end section our team=====*/
 
-/*footer*/
+/*=======footer========*/
 .footer {
     position: absolute;
     width: 1600px;
     height: 252px;
     left: 0px;
     top: 2097px;
-    background: #2F303A;
+    background: var(--background-hero);
 }
 
 .footer .link {
     color: var(--background-color);
     text-decoration: none;
-    font-family: Roboto;
-    font-weight: normal;
     font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
+    line-height: 1.7;
 }
 
 .footer .link:hover,
@@ -295,11 +316,8 @@ nav {
 .footer .link-cont {
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
-    font-family: Roboto;
-    font-weight: normal;
     font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
+    line-height: 1.7;
 }
 
 .footer .link-cont:hover,
@@ -307,8 +325,10 @@ nav {
     color: var(--second-color-link);
 }
 
+/*=======end footer========*/
 
-/*portfolio*/
+/*=============         ============*/
+/*=============portfolio============*/
 .btn li {
     display: inline-block;
 }
@@ -346,14 +366,10 @@ nav {
     background: #F5F4FA;
     border-radius: 4px;
 
-    font-family: Roboto;
     font-size: 16px;
     font-weight: 500;
-    line-height: 26px;
-    letter-spacing: 0.03em;
+    line-height: 1.6;
     text-align: center;
-
-
 }
 
 .cards-product {
@@ -364,23 +380,11 @@ nav {
     top: 174px;
 }
 
-.cards-product h3 {
-    font-family: Roboto;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 36px;
-    /* identical to box height, or 200% */
-    letter-spacing: 0.06em;
-    color: var(--text-item)
-}
-
 .cards-product p {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
     font-size: 16px;
-    line-height: 30px;
-    /* identical to box height, or 187% */
-    letter-spacing: 0.03em;
+    line-height: 1.87;
     color: var(--primary-text-color)
 }
+
+/*=============   END    ============*/
+/*=============portfolio============*/
