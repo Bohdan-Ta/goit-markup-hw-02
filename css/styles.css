@@ -116,12 +116,12 @@ body {
     color: var(--second-color-link);
 }
 
-.site-nav li {
+.site-nav-link {
     border: 50px;
     display: inline-block;
 }
 
-.contacts li {
+.contacts-link {
     border: 1px;
     display: inline-block;
 }
@@ -146,7 +146,6 @@ body {
 
 /*==button==*/
 .button {
-
     font-family: Roboto;
     font-weight: 700;
     font-size: 16px;
@@ -171,7 +170,7 @@ body {
 /*==END hero==*/
 
 /*======section-feature=====*/
-.features-list li {
+.features-list {
     width: 270px;
     height: 101px;
     left: 215px;
@@ -180,14 +179,14 @@ body {
     list-style-type: none;
 }
 
-.features-list p {
+.features-text {
     font-size: 14px;
     line-height: 1.71;
 }
 
 /*======end section-feature=====*/
 /*====section what are we doing====*/
-.section-work li {
+.work-img {
     list-style-type: none;
     display: inline-block;
 }
@@ -195,12 +194,12 @@ body {
 /*====end section what are we doing====*/
 
 /*=====section our team=====*/
-.section-team li {
+.card-team {
     list-style-type: none;
     display: inline-block;
 }
 
-.section-team p {
+.card-team-text {
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
@@ -247,12 +246,12 @@ footer {
 
 /*=============         ============*/
 /*=============portfolio============*/
-.btn li {
+.btn {
     display: inline-block;
     cursor: pointer;
 }
 
-.cards-product li {
+.cards-product {
     list-style-type: none;
     display: inline-block;
 }
@@ -271,6 +270,7 @@ footer {
 
     background: var(--background-our-team);
     border-radius: 4px;
+    font-family: Roboto;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.6;
@@ -278,7 +278,7 @@ footer {
     cursor: pointer;
 }
 
-.cards-product p {
+.cards-product-text {
     font-size: 16px;
     line-height: 1.87;
     color: var(--primary-text-color)
