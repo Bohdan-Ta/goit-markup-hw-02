@@ -25,7 +25,7 @@
 }
 
 /*h2 portfolio*/
-.portfolio h2 {
+.cards-product-title {
     font-weight: 700;
     font-size: 18px;
     line-height: 2.0;
@@ -36,7 +36,6 @@
 /*h3 our-features*/
 .features-list .title {
     font-weight: 700;
-    font-size: 14px;
     line-height: 1.2;
     text-transform: uppercase;
     color: var(--text-item);
@@ -56,6 +55,7 @@
 /*=============END COMPONENT===============*/
 body {
     font-family: Roboto, sans-serif;
+    font-size: 14px;
     letter-spacing: 0.03em;
     background: var(--background-color);
     color: var(--primary-text-color);
@@ -88,7 +88,6 @@ body {
     color: var(--text-item);
     text-decoration: none;
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.2;
     letter-spacing: 0.02em;
 }
@@ -106,7 +105,6 @@ body {
     color: var(--primary-text-color);
     text-decoration: none;
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.2;
     letter-spacing: 0.02em;
 }
@@ -118,13 +116,8 @@ body {
 
 .site-nav-link {
     border: 50px;
-    display: inline-block;
 }
 
-.contacts-link {
-    border: 1px;
-    display: inline-block;
-}
 
 /*====END панель навигации====*/
 
@@ -171,16 +164,10 @@ body {
 
 /*======section-feature=====*/
 .features-list {
-    width: 270px;
-    height: 101px;
-    left: 215px;
-    top: 774px;
-    display: inline-table;
     list-style-type: none;
 }
 
 .features-text {
-    font-size: 14px;
     line-height: 1.71;
 }
 
@@ -188,7 +175,6 @@ body {
 /*====section what are we doing====*/
 .work-img {
     list-style-type: none;
-    display: inline-block;
 }
 
 /*====end section what are we doing====*/
@@ -196,7 +182,6 @@ body {
 /*=====section our team=====*/
 .card-team {
     list-style-type: none;
-    display: inline-block;
 }
 
 .card-team-text {
@@ -209,17 +194,16 @@ body {
 
 /*=======footer========*/
 .footer {
-    width: 1600px;
-    height: 252px;
-    left: 0px;
-    top: 2097px;
     background: #2F303A;
+}
+
+.address-list {
+    list-style-type: none;
 }
 
 .link-google {
     color: var(--background-color);
     text-decoration: none;
-    font-size: 14px;
     line-height: 1.7;
     font-style: normal;
 }
@@ -232,7 +216,6 @@ body {
 .link-cont {
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
-    font-size: 14px;
     line-height: 1.7;
     font-style: normal;
 }
@@ -247,8 +230,7 @@ body {
 /*=============         ============*/
 /*=============portfolio============*/
 .btn {
-    display: inline-block;
-    cursor: pointer;
+    list-style-type: none;
 }
 
 .btn button {
@@ -270,7 +252,6 @@ body {
 
 .cards-product {
     list-style-type: none;
-    display: inline-block;
 }
 
 .cards-product-text {
