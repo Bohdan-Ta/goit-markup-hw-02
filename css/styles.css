@@ -208,7 +208,7 @@ body {
 /*=====end section our team=====*/
 
 /*=======footer========*/
-footer {
+.footer {
     width: 1600px;
     height: 252px;
     left: 0px;
@@ -251,23 +251,7 @@ footer {
     cursor: pointer;
 }
 
-.cards-product {
-    list-style-type: none;
-    display: inline-block;
-}
-
-.btn .all {
-    height: 38px;
-    width: 73px;
-    left: 495px;
-    top: 174px;
-    border-radius: 4px;
-    color: var(--background-color);
-    background-color: var(--second-color-link);
-}
-
 .btn button {
-
     background: var(--background-our-team);
     border-radius: 4px;
     font-family: Roboto;
@@ -276,6 +260,17 @@ footer {
     line-height: 1.6;
     text-align: center;
     cursor: pointer;
+}
+
+.btn button:hover,
+.btn button:focus {
+    color: var(--background-color);
+    background-color: var(--second-color-link);
+}
+
+.cards-product {
+    list-style-type: none;
+    display: inline-block;
 }
 
 .cards-product-text {
