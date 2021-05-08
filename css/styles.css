@@ -36,6 +36,7 @@
 /*h3 our-features*/
 .features-list .title {
     font-weight: 700;
+    font-size: 14px;
     line-height: 1.2;
     text-transform: uppercase;
     color: var(--text-item);
